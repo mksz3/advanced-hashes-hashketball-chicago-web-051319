@@ -115,17 +115,17 @@ def game_hash
   }
 end
 
-def playerStats(player)
+def player_stats(player)
   players = game_hash[:home][:players].merge(game_hash[:away][:players])
   players.fetch(player)
 end
 
 def num_points_scored(player)
-  playerStats(player)[:points]
+  player_stats(player)[:points]
 end
 
 def shoe_size(player)
-  playerStats(player)[:shoe]
+  player_stats(player)[:shoe]
 end
 
 def team_colors(team) 
@@ -146,7 +146,5 @@ def player_numbers(team)
 
   game_hash[:home][:team_name] == team ? home : away
 end
-
-
 
 
