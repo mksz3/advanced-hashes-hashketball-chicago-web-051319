@@ -128,6 +128,10 @@ def shoe_size(player)
   playerStats(player)[:shoe]
 end
 
+def team_colors(team) 
+  
+end
+
 
 
 
