@@ -125,8 +125,7 @@ def num_points_scored(player)
 end
 
 def shoe_size(player)
-  players = game_hash[:home][:players].merge(game_hash[:away][:players])
-  players.fetch(player)[:shoe]
+  playerStats(player)[:shoe]
 end
 
 
