@@ -148,6 +148,5 @@ def player_numbers(team)
 end
 
 def big_shoe_rebounds
-  
-  
+  game_hash[:homo]
 end
