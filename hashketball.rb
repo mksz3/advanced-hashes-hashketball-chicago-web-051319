@@ -148,5 +148,6 @@ def player_numbers(team)
 end
 
 def big_shoe_rebounds
-  game_hash[:homo]
+    players = game_hash[:home][:players].merge(game_hash[:away][:players])
+    
 end
