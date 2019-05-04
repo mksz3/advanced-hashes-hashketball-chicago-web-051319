@@ -149,5 +149,13 @@ end
 
 def big_shoe_rebounds
     players = game_hash[:home][:players].merge(game_hash[:away][:players])
-    players
+    shoes = players.map {|player, stats|
+      stats[:shoe]
+    }
+    biggest = shoes.sort.reverse[0]
+    players.select { |player, stats|
+      if stats[:shoe] == biggest
+        return stats[:rebounds]
+      end
+    }
 end
