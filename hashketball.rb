@@ -138,10 +138,10 @@ end
 
 def player_numbers(team)
   homeTeam = game_hash[:home][:players].map {|player|
-    player[:points]
+    player[:number]
   }
   awayTeam = game_hash[:away][:players].map {|player|
-    player[:points]
+    player[:number]
   }
   game_hash[:home][:team_name] === team ? homeTeam : awayTeam
 end
