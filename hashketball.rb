@@ -115,12 +115,15 @@ def game_hash
   }
 end
 
-def num_points_scored(name)
+def num_points_scored(player)
   players = game_hash[:home][:players].merge(game_hash[:away][:players])
   players.fetch(name)[:points]
 end
 
-
+def shoe_size(player)
+  players = game_hash[:home][:players].merge(game_hash[:away][:players])
+  players.fetch(name)[:shoe]
+end
 
 
 
